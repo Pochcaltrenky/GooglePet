@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Google Pet: Editing Character</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav id="nav">
+		<div class="profile">
+			<img src="profile.png">	
+			<h5>Anna</h5>
+			<p>anna@gmail.com</p>
+		</div>
+		<ul class="navlinks">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="plugins.html">Plugins</a></li>
+			<li><a href="settings.html">Settings</a></li>
+		</ul>
+		<hr>
+		<ul class="navlinks2">
+			<li><a href="plugins.html">Help & Feedback</a></li>
+			<li><a href="">About</a></li>
+		</ul>
+	</nav>
+	<div onclick="Close()" id="overlay">
+	</div>
+	<section class="topbar">
+		<a href="index.html">
+			<div id="burger">
+				<img src="back.png" class="burgerimg">
+			</div>
+		</a>
+		<h1>Editing Character</h1>
+	</section>
+	<main>
+		<img src="mike.png" class="characteredit">
+		<div class="editwindow">
+			<div class="categories">
+				<a href="body.html">
+					<button class="button small left green">Body</button>
+				</a>
+				<a href="head.html">
+					<button class="button small right green">Head</button>
+				</a>
+				<a href="clothes.html">
+					<button class="button small left green">Clothes</button>
+				</a>
+				<a href="voice.html">
+					<button class="button small right green">Voice</button>
+				</a>
+			</div>
+		</div>
+	</main>
+<script>
+	function Burger() {
+		document.getElementById("nav").style.display="block";
+		document.getElementById("nav").style.left="0";
+		document.getElementById("overlay").style.display="block";
+	}
+	
+	function Close () {
+		document.getElementById("nav").style.display="none";
+		document.getElementById("nav").style.left="-80vw";
+		document.getElementById("overlay").style.display="none";
+	}
+</script>
+</body>
+</html>

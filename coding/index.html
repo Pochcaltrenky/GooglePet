@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Google Pet</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav id="nav">
+		<div class="profile">
+			<img src="profile.png">	
+			<h5>Anna</h5>
+			<p>anna@gmail.com</p>
+		</div>
+		<ul class="navlinks">
+			<li><a href="plugins.html">Plugins</a></li>
+			<li><a href="settings.html">Settings</a></li>
+		</ul>
+		<hr>
+		<ul class="navlinks2">
+			<li><a href="plugins.html">Help & Feedback</a></li>
+			<li><a href="">About</a></li>
+		</ul>
+	</nav>
+	<div onclick="Close()" id="overlay">
+	</div>
+	<section class="topbar">
+		<div id="burger">
+			<img onclick="Burger()" src="burger.png" class="burgerimg">
+		</div>
+		<h1>Character</h1>
+	</section>
+	<main>
+		<h2>Mike</h2>
+		<img src="mike.png" class="character">
+		<a href="edit.html">
+			<button class="green button">Edit</button>
+		</a>
+		<a onclick="Reset()" class="reset"><u>Reset Character</u></a>
+	</main>
+	<div id="resetwindow">
+		<p>Are you sure you want to reset the character and create a new one?</p>
+		<button onclick="Close()" class="red button small left">No</button>
+		<button class="red button small right">Yes, reset</button>
+	</div>
+<script>
+	function Burger() {
+		document.getElementById("nav").style.display="block";
+		document.getElementById("nav").style.left="0vw";
+		document.getElementById("overlay").style.display="block";
+	}
+	
+	function Close() {
+		document.getElementById("nav").style.display="none";
+		document.getElementById("nav").style.left="-80vw";
+		document.getElementById("resetwindow").style.display="none";
+		document.getElementById("overlay").style.display="none";
+	}
+	
+	function Reset() {
+		document.getElementById("resetwindow").style.display="block";
+		document.getElementById("overlay").style.display="block";
+	}
+</script>
+</body>
+</html>

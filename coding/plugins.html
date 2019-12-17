@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Google Pet: Plugins</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav id="nav">
+		<div class="profile">
+			<img src="profile.png">	
+			<h5>Anna</h5>
+			<p>anna@gmail.com</p>
+		</div>
+		<ul class="navlinks">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="plugins.html">Plugins</a></li>
+			<li><a href="settings.html">Settings</a></li>
+		</ul>
+		<hr>
+		<ul class="navlinks2">
+			<li><a href="plugins.html">Help & Feedback</a></li>
+			<li><a href="">About</a></li>
+		</ul>
+	</nav>
+	<div onclick="Close()" id="overlay">
+	</div>
+	<main>
+	    <div class="plugin">
+		<a href="plugins.html"><button class="chosen">Recommended</button></a>
+		<a href="popular.html"><button class="unchosen">Popular</button></a>
+			<table>
+				<tr>
+					<th align="left" style="width: 10%;"><h4>1</h4></th>
+					<th align="left" style="width: 20%;"><img src="mcdonalds.png"></th>
+					<th style="width: 60%; margin-left: 10%; text-align: left;"><h4>McDonald's</h4>Order from McDonald's through your beloved Pet!</th>
+				</tr>
+			</table>
+			<a href="chess.html">
+			<table>
+				<tr>
+					<th align="left" style="width: 10%;"><h4>2</h4></th>
+					<th align="left" style="width: 20%;"><img src="chess.png"></th>
+					<th style="width: 60%; margin-left: 10%; text-align: left;"><h4>Chess</h4>Play a game of chess against an AI!</th>
+				</tr>
+			</table>
+			</a>
+			<table>
+				<tr>
+					<th align="left" style="width: 10%;"><h4>3</h4></th>
+					<th align="left" style="width: 20%;"><img src="tasty.png"></th>
+					<th style="width: 60%; margin-left: 10%; text-align: left;"><h4>Tasty</h4>Start cooking like a pro with recipes from Tasty-</th>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<th align="left" style="width: 10%;"><h4>4</h4></th>
+					<th align="left" style="width: 20%;"><img src="duolingo.png"></th>
+					<th style="width: 60%; margin-left: 10%; text-align: left;"><h4>Duolingo</h4>Learn languages on the way with the help of your Pet.</th>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<th align="left" style="width: 10%;"><h4>5</h4></th>
+					<th align="left" style="width: 20%;"><img src="skype.png"></th>
+					<th style="width: 60%; margin-left: 10%; text-align: left;"><h4>Skype</h4>Call your friends via Skype.</th>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<th align="left" style="width: 10%;"><h4>6</h4></th>
+					<th align="left" style="width: 20%;"><img src="messenger.png"></th>
+					<th style="width: 60%; margin-left: 10%; text-align: left;"><h4>Messenger</h4>Receive and send messages via your personal assistant.</th>
+				</tr>
+			</table>	
+		</div>
+	</main>
+	<section class="topbar">
+		<a href="index.html">
+			<div id="burger">
+				<img src="back.png" class="burgerimg">
+			</div>
+		</a>
+		<h1>Plugins</h1>
+		<div class="search">
+			<img src="search.png">
+		</div>
+	</section>	
+<script>
+	function Burger() {
+		document.getElementById("nav").style.display="block";
+		document.getElementById("nav").style.left="0";
+		document.getElementById("overlay").style.display="block";
+	}
+	
+	function Close () {
+		document.getElementById("nav").style.display="none";
+		document.getElementById("nav").style.left="-80vw";
+		document.getElementById("overlay").style.display="none";
+	}
+</script>	
+</body>
+</html>

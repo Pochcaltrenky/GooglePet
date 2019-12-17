@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Google Pet</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav id="nav">
+		<div class="profile">
+			<img src="profile.png">	
+			<h5>Anna</h5>
+			<p>anna@gmail.com</p>
+		</div>
+		<ul class="navlinks">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="plugins.html">Plugins</a></li>
+			<li><a href="settings.html">Settings</a></li>
+		</ul>
+		<hr>
+		<ul class="navlinks2">
+			<li><a href="plugins.html">Help & Feedback</a></li>
+			<li><a href="">About</a></li>
+		</ul>
+	</nav>
+	<div onclick="Close()" id="overlay">
+	</div>
+	<section class="topbar">
+		<a href="index.html">
+			<div id="burger">
+				<img src="back.png" class="burgerimg">
+			</div>
+		</a>
+		<h1>Settings</h1>
+		<div class="search">
+			<img src="search.png">
+		</div>
+	</section>
+	<main align="left" style=" width: 90%; margin-left: 5%; margin-top: -5vh;">
+		<h7>General</h7>
+		<br>
+		<br>
+		<h6>Notifications</h6>
+		<p style="font-size: 0.8em; font-weight: 300; line-height: 1.6" align="left">Manage notification settings</p>
+		<br>
+		<h6>Auto-update apps</h6>
+		<p style="font-size: 0.8em; font-weight: 300; line-height: 1.6" align="left">Auto-update apps ove wi-fi only</p>
+		<br>
+		<h6>Night-mode</h6>
+		<p style="font-size: 0.8em; font-weight: 300; line-height: 1.6" align="left">Pet is sleeping from 22:00 to 7:00</p>
+		<br>
+		<hr style="width: 110%; margin-left: -5%;">
+		<br>
+		<h6>Google Pet version</h6>
+		<p style="font-size: 0.8em; font-weight: 300; line-height: 1.6" align="left">Version: XXX-YYY-ZZZ</p>
+		<br>
+		<h6>Protect certification</h6>
+		<p style="font-size: 0.8em; font-weight: 300; line-height: 1.6" align="left">Device is certified</p>
+	</main>
+<script>
+	function Burger() {
+		document.getElementById("nav").style.display="block";
+		document.getElementById("nav").style.left="0vw";
+		document.getElementById("overlay").style.display="block";
+	}
+	
+	function Close() {
+		document.getElementById("nav").style.display="none";
+		document.getElementById("nav").style.left="-80vw";
+		document.getElementById("resetwindow").style.display="none";
+		document.getElementById("overlay").style.display="none";
+	}
+	function Save() {
+		document.getElementById("saved").style.display="block";	
+	}
+</script>
+</body>
+</html>
